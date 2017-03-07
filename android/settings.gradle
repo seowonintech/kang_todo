@@ -1,0 +1,3 @@
+rootProject.name = 'kang_todo'
+
+include ':app'
