@@ -15,7 +15,8 @@ const manipulateTodos = (state = [], action) => {
           text: action.text,
           complete: false
         }
-      ]
+      ];
+
     case action.DELETE_TODO:
       return state.filter(t => t.id !== action.id);
 
@@ -31,3 +32,5 @@ const manipulateTodos = (state = [], action) => {
       });
   }
 }
+
+export default manipulateTodos;
