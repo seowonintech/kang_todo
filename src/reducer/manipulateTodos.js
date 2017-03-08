@@ -1,7 +1,7 @@
 import * as action from '../action/action';
 
 const manipulateTodos = (state = [], action) => {
-  switch (action.type){
+  switch (action.type) {
     // the action parameter
     // should be same as the returned values from action functions
     // such as addTodo, deleteTodo and toggleTodo except for type
@@ -11,10 +11,23 @@ const manipulateTodos = (state = [], action) => {
         ...state,
         {
           // values returned from addTodo action such as id and text, but no type.
-          id
+          id: action.id,
+          text: action.text,
+          complete: false
         }
       ]
     case action.DELETE_TODO:
+      return state.filter(t => t.id !== action.id);
+
+    // complete or not
     case action.TOGGLE_TODO:
+      return state.map(t => {
+        if (t.id === action.id){
+          return {
+            ...state,
+            complete: !complete
+          }
+        }
+      });
   }
 }
