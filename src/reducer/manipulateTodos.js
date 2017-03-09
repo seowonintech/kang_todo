@@ -31,6 +31,7 @@ const manipulateTodos = (state = [], action) => {
         }
       });
   }
+  return state;
 }
 
 export default manipulateTodos;

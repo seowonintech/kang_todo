@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { createStore } from 'redux';
-import reducer from './reducer'
+import { Provider } from 'react-redux';
+import reducer from './reducer';
+import App from './component/App';
 
 const store = createStore(reducer);
 
@@ -9,9 +11,7 @@ class TodoApp extends Component {
     render() {
         return (
             <Provider store={store}>
-                <View>
-                    <Text>aaaa</Text>
-                </View>
+                <App />
             </Provider>
         );
     }
