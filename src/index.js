@@ -9,7 +9,9 @@ class TodoApp extends Component {
     render() {
         return (
             <Provider store={store}>
-                <App />
+                <View>
+                    <Text>aaaa</Text>
+                </View>
             </Provider>
         );
     }
