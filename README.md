@@ -9,6 +9,7 @@ Be careful to fork it out haha
 - Make autoscript for a game.
 - Enjoy freedom.
 - Enjoy meditation.
+- Park Out on 2017.3.10
 
 # I really hate
-- Our president.
+- ~~Our president.~~
