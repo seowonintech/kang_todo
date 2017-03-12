@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TextInput, Button } from 'react-native';
 
 class AddTodo extends Component {
   constructor(props) {
     super(props);
   }
 
+  onButtonPress(){
+    console.log('aaa');
+  }
+
   render() {
     return (
-      <Text>AddTodo</Text>
+      <View>
+      <TextInput
+        value='Add Todo'
+      />
+      <Button
+        title='Add Todo'
+      />
+      </View>
     );
   }
 }
